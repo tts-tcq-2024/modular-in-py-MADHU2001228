@@ -3,10 +3,10 @@
 MAJOR_COLORS = ['White', 'Red', 'Black', 'Yellow', 'Violet']
 MINOR_COLORS = ["Blue", "Orange", "Green", "Brown", "Slate"]
 
-def color_pair_to_string(major_color, minor_color):
+def color_pair_to_string(major_color, minor_color): #Returns the color pair as a formatted string.
     return f'{major_color} {minor_color}'
 
-def get_color_from_pair_number(pair_number):
+def get_color_from_pair_number(pair_number): #Returns the color pair for the given pair number
     zero_based_pair_number = pair_number - 1
     major_index = zero_based_pair_number // len(MINOR_COLORS)
     if major_index >= len(MAJOR_COLORS):
@@ -16,7 +16,7 @@ def get_color_from_pair_number(pair_number):
         raise Exception('Minor index out of range')
     return MAJOR_COLORS[major_index], MINOR_COLORS[minor_index]
 
-def get_pair_number_from_color(major_color, minor_color):
+def get_pair_number_from_color(major_color, minor_color): #Returns the pair number for the given color pair.
     try:
         major_index = MAJOR_COLORS.index(major_color)
     except ValueError:
