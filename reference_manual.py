@@ -2,7 +2,7 @@
 
 from color_code import get_color_from_pair_number
 
-def print_reference_manual():
+def print_reference_manual(): #Prints the color code reference manual.
     print("Color Code Reference Manual")
     print("---------------------------")
     for pair_number in range(1, 26):
