@@ -1,4 +1,7 @@
-import color_code_Initializer 
+from color_code_Initializer import MINOR_COLORS , MAJOR_COLORS
+
+def color_pair_to_string(major_color, minor_color): #Returns the color pair as a formatted string.
+    return f'{major_color} {minor_color}'
 
 def get_color_from_pair_number(pair_number): #Returns the color pair for the given pair number
     zero_based_pair_number = pair_number - 1
