@@ -1,4 +1,4 @@
-from color_code_Initializer import color_pair_to_string
+import color_code_Initializer 
 
 def get_color_from_pair_number(pair_number): #Returns the color pair for the given pair number
     zero_based_pair_number = pair_number - 1
