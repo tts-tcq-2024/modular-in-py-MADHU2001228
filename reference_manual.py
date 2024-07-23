@@ -1,6 +1,6 @@
 
 
-from color_code import get_color_from_pair_number
+from color_code_Pairing import get_color_from_pair_number
 
 def print_reference_manual(): #Prints the color code reference manual.
     print("Color Code Reference Manual")
